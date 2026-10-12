@@ -1,0 +1,87 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Master</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <main class="quiz-container">
+        <header class="header">
+            <div class="logo">✦ Quiz Master</div>
+            <p>Learn something new today!</p>
+        </header>
+
+        <section id="welcome-screen" class="screen active">
+            <div class="illustration">🧠✨</div>
+            <h1>Ready to Challenge Yourself?</h1>
+            <p class="description">
+                Test your knowledge with fun questions.
+                Think fast and aim for the highest score!
+            </p>
+
+            <div class="features">
+                <div class="feature-card">
+                    <span>⏱️</span>
+                    <strong>15 Seconds</strong>
+                    <small>Per question</small>
+                </div>
+                <div class="feature-card">
+                    <span>🏆</span>
+                    <strong>5 Questions</strong>
+                    <small>Earn points</small>
+                </div>
+            </div>
+
+            <button id="start-btn" class="primary-btn">
+                Start Quiz <span>→</span>
+            </button>
+        </section>
+
+        <section id="quiz-screen" class="screen">
+            <div class="quiz-top">
+                <span id="question-count">Question 1 of 5</span>
+                <div class="timer">⏳ <span id="timer">15</span>s</div>
+            </div>
+
+            <div class="progress-track">
+                <div id="progress-bar"></div>
+            </div>
+
+            <h2 id="question">Question will appear here</h2>
+
+            <div id="answer-buttons" class="answer-list"></div>
+
+            <p id="feedback" aria-live="polite"></p>
+
+            <button id="next-btn" class="primary-btn" hidden>
+                Next Question →
+            </button>
+        </section>
+
+        <section id="result-screen" class="screen">
+            <div class="illustration">🎉🏆</div>
+            <h1>Quiz Completed!</h1>
+            <p class="description">Great job! Here is your result.</p>
+
+            <div class="score-circle">
+                <strong id="final-score">0/5</strong>
+                <span id="score-percent">0%</span>
+            </div>
+
+            <h2 id="result-message">Keep learning!</h2>
+
+            <button id="restart-btn" class="primary-btn">
+                Play Again ↻
+            </button>
+        </section>
+
+        <footer>Made with 💜 for curious minds</footer>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
